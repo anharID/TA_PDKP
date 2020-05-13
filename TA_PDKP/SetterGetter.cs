@@ -8,31 +8,25 @@ namespace TA_PDKP
 {
     class SetterGetter
     {
-        class Beli_setget
+        private string berat;
+        private string harga;
+
+        public void setBerat(string Text)
         {
-            private string Berat;
-            private string Harga;
-
-            public void setBerat (string val)
-            {
-                this.Berat = val;
-            }
-            public string getBerat()
-            {
-                return Berat;
-            }
-            public void setHarga (string val)
-            {
-                this.Harga = val;
-            }
-            public string getHarga()
-            {
-                return Harga;
-            }
-
-
+            this.berat = Text;
         }
-        
+        public string getBerat()
+        {
+            return berat;
+        }
+        public void setHarga(string Text)
+        {
+            this.harga = Text;
+        }
+        public string getHarga()
+        {
+            return harga;
+        }
 
     }
 }

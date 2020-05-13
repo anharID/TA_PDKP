@@ -39,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -46,6 +47,7 @@
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.hargabeli);
             this.panel1.Controls.Add(this.button2);
@@ -54,16 +56,16 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(129, 38);
+            this.panel1.Location = new System.Drawing.Point(171, 50);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(403, 361);
+            this.panel1.Size = new System.Drawing.Size(382, 355);
             this.panel1.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(177, 247);
+            this.label3.Location = new System.Drawing.Point(167, 238);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 14);
             this.label3.TabIndex = 8;
@@ -72,17 +74,18 @@
             // hargabeli
             // 
             this.hargabeli.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hargabeli.Location = new System.Drawing.Point(164, 263);
+            this.hargabeli.Location = new System.Drawing.Point(156, 255);
             this.hargabeli.Name = "hargabeli";
-            this.hargabeli.Size = new System.Drawing.Size(84, 22);
+            this.hargabeli.Size = new System.Drawing.Size(98, 22);
             this.hargabeli.TabIndex = 7;
             // 
             // button2
             // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(149, 303);
+            this.button2.Location = new System.Drawing.Point(217, 293);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 30);
+            this.button2.Size = new System.Drawing.Size(122, 48);
             this.button2.TabIndex = 6;
             this.button2.Text = "Hitung Harga Beli";
             this.button2.UseVisualStyleBackColor = true;
@@ -90,6 +93,7 @@
             // 
             // comboKualitas
             // 
+            this.comboKualitas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboKualitas.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboKualitas.FormattingEnabled = true;
             this.comboKualitas.Items.AddRange(new object[] {
@@ -103,7 +107,7 @@
             // berat
             // 
             this.berat.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.berat.Location = new System.Drawing.Point(125, 210);
+            this.berat.Location = new System.Drawing.Point(124, 203);
             this.berat.Name = "berat";
             this.berat.Size = new System.Drawing.Size(167, 22);
             this.berat.TabIndex = 4;
@@ -112,7 +116,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(122, 194);
+            this.label2.Location = new System.Drawing.Point(122, 186);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(138, 14);
             this.label2.TabIndex = 2;
@@ -151,12 +155,24 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button3
+            // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(52, 293);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(122, 48);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Clear";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Beli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
-            this.ClientSize = new System.Drawing.Size(640, 411);
+            this.ClientSize = new System.Drawing.Size(724, 422);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Name = "Beli";
@@ -180,5 +196,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox hargabeli;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button3;
     }
 }

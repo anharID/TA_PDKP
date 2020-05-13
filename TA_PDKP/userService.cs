@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 
 namespace TA_PDKP
 {
     class userService
     {
+        Thread th;
         private string[,] data;
         private string user, password, roles = "";
 
@@ -32,16 +34,25 @@ namespace TA_PDKP
             if (status == false)
             {
                 MessageBox.Show("LOGIN GAGAL");
+                
             }
             else
             {
                 MessageBox.Show("LOGIN BERHASIL");
-                Aplikasi open = new Aplikasi();
-                open.Show();
-                
-                
+
+                th = new Thread(opennewform);
+                th.SetApartmentState(ApartmentState.STA);
+                th.Start();
+
+
             }
         }
+
+        private void opennewform()
+        {
+            Application.Run(new Aplikasi());
+        }
+
         private (bool, string) checkCredentials()
         {
             for (int i = 0; i < data.GetLength(0); i++)

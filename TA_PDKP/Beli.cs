@@ -12,6 +12,7 @@ namespace TA_PDKP
 {
     public partial class Beli : Form
     {
+        
         public Beli()
         {
             InitializeComponent();
@@ -24,19 +25,32 @@ namespace TA_PDKP
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string brt;
-            float b, harga;
+            string sberat, gberat, sharga, gharga;
+            float berat, harga;
+            SetterGetter panggil = new SetterGetter();
+            sberat = this.berat.Text;
+            panggil.setBerat(sberat);
+            gberat = panggil.getBerat();
+            float.TryParse(gberat, out berat);
 
-            brt = this.berat.Text;
-            float.TryParse(brt, out b);
-
-            if (this.comboKualitas.SelectedItem == "Biasa")
-                harga = b * 10000;
+            if (comboKualitas.SelectedItem == "Biasa")
+                harga = 10000 * berat;
             else
-                harga = b * 15000;
+                harga = 15000 * berat;
 
-            hargabeli.Text = harga.ToString();
+            harga.ToString();
 
+            sharga = harga.ToString();
+            panggil.setHarga(sharga);
+            gharga = panggil.getHarga();
+            this.hargabeli.Text = gharga;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            comboKualitas.Text = "";
+            berat.Text = "";
+            hargabeli.Text = "";
         }
     }
 }
