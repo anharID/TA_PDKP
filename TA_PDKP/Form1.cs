@@ -7,13 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Threading;
 
 namespace TA_PDKP
 {
     public partial class Form1 : Form
     {
-        Thread th;
         public Form1()
         {
             InitializeComponent();
@@ -26,15 +24,7 @@ namespace TA_PDKP
             userService masuk = new userService(user, pass);
             
             masuk.login();
-            this.Close();
-            
-            
-            
-            username.Text = "";
-            password.Text = "";
-            
-            
-        }
+            this.Close();        }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
