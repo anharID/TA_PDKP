@@ -34,12 +34,12 @@ namespace TA_PDKP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            openChildForm(new Beli());
+            openChildForm(new Jual());
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            openChildForm(new Jual());
+            openChildForm(new Beli());
         }
     }
 }
