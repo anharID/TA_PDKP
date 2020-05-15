@@ -159,7 +159,7 @@
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelSideMenu);
             this.Name = "Aplikasi";
-            this.Text = "Cokelat Tok Aba";
+            this.Text = "\"COBA\" Choco Tok Aba";
             this.panelSideMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

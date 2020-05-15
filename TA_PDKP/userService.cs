@@ -34,7 +34,11 @@ namespace TA_PDKP
             if (status == false)
             {
                 MessageBox.Show("LOGIN GAGAL");
-                
+                th = new Thread(opennewform2);
+                th.SetApartmentState(ApartmentState.STA);
+                th.Start();
+
+
             }
             else
             {
@@ -46,6 +50,11 @@ namespace TA_PDKP
 
 
             }
+        }
+
+        private void opennewform2()
+        {
+            Application.Restart();
         }
 
         private void opennewform()
