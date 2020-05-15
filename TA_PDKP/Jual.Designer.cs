@@ -85,6 +85,7 @@
             // 
             // hargabeli
             // 
+            this.hargabeli.Enabled = false;
             this.hargabeli.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hargabeli.Location = new System.Drawing.Point(156, 255);
             this.hargabeli.Name = "hargabeli";

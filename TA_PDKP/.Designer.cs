@@ -140,6 +140,7 @@
             // 
             // bayar3
             // 
+            this.bayar3.Enabled = false;
             this.bayar3.Location = new System.Drawing.Point(104, 40);
             this.bayar3.Name = "bayar3";
             this.bayar3.Size = new System.Drawing.Size(79, 20);
@@ -265,6 +266,7 @@
             // 
             // bayar2
             // 
+            this.bayar2.Enabled = false;
             this.bayar2.Location = new System.Drawing.Point(104, 40);
             this.bayar2.Name = "bayar2";
             this.bayar2.Size = new System.Drawing.Size(79, 20);
@@ -390,6 +392,7 @@
             // 
             // bayar1
             // 
+            this.bayar1.Enabled = false;
             this.bayar1.Location = new System.Drawing.Point(96, 44);
             this.bayar1.Name = "bayar1";
             this.bayar1.Size = new System.Drawing.Size(79, 20);
